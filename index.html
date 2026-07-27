@@ -6,30 +6,33 @@
 <title>B & B Bag World</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 background:#f8f5f2;
 color:#333;
+line-height:1.6;
 }
 
 .topbar{
 background:#6b4f3a;
-color:#fff;
+color:white;
 text-align:center;
 padding:10px;
 font-size:14px;
 }
 
 header{
-background:#fff;
+background:white;
 text-align:center;
-padding:30px 20px;
+padding:35px 20px;
 box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
@@ -37,30 +40,34 @@ header img{
 width:120px;
 height:120px;
 border-radius:50%;
+object-fit:cover;
 margin-bottom:15px;
 }
 
 header h1{
-font-size:40px;
 color:#5b3b1e;
+font-size:40px;
 }
 
 header p{
+color:#666;
 margin-top:10px;
 font-size:18px;
-color:#666;
 }
 
 nav{
 background:#222;
 padding:15px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 15px;
+margin:0 18px;
 font-weight:bold;
 }
 
@@ -69,31 +76,31 @@ color:#d4af37;
 }
 
 .hero{
+background:#e9dfd5;
 padding:80px 20px;
 text-align:center;
-background:#e9dfd5;
 }
 
 .hero h2{
 font-size:42px;
-margin-bottom:15px;
 color:#5b3b1e;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:18px;
 max-width:700px;
 margin:auto;
-line-height:1.8;
+font-size:18px;
 }
 
 .btn{
 display:inline-block;
-margin:10px;
+margin:12px;
 padding:14px 30px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
+transition:.3s;
 }
 
 .whatsapp{
@@ -104,6 +111,58 @@ color:white;
 .facebook{
 background:#1877F2;
 color:white;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.products{
+padding:70px 20px;
+background:white;
+}
+
+.products h2{
+text-align:center;
+font-size:38px;
+color:#5b3b1e;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+width:280px;
+background:#fafafa;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+padding:20px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.buy{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:30px;
 }
 </style>
 
@@ -117,7 +176,7 @@ color:white;
 
 <header>
 
-<img src="logo.png" alt="B & B Bag World Logo">
+<img src="logo.png" alt="Logo">
 
 <h1>B & B Bag World</h1>
 
@@ -128,11 +187,8 @@ color:white;
 <nav>
 
 <a href="#">Home</a>
-
 <a href="#products">Products</a>
-
 <a href="#about">About</a>
-
 <a href="#contact">Contact</a>
 
 </nav>
@@ -142,83 +198,69 @@ color:white;
 <h2>Welcome to B & B Bag World</h2>
 
 <p>
-Discover stylish ladies bags, travel bags and backpacks with premium quality and affordable prices.
+Discover stylish ladies bags, backpacks and travel bags with premium quality and affordable prices.
 </p>
 
 <br>
 
-<a class="btn whatsapp"
-href="https://wa.me/8801627348384"
-target="_blank">
+<a class="btn whatsapp" href="https://wa.me/8801627348384" target="_blank">
 Order on WhatsApp
 </a>
 
-<a class="btn facebook"
-href="https://www.facebook.com/share/1FWagFNEfb/"
-target="_blank">
+<a class="btn facebook" href="https://www.facebook.com/share/1FWagFNEfb/" target="_blank">
 Visit Facebook
 </a>
 
 </section>
-<!-- PRODUCTS SECTION -->
 
-<section id="products" style="padding:70px 20px;background:#fff;">
+<section class="products" id="products">
 
-<h2 style="text-align:center;color:#5b3b1e;font-size:38px;margin-bottom:40px;">
-Our Collection
-</h2>
+<h2>Our Collection</h2>
 
-<div style="display:flex;justify-content:center;flex-wrap:wrap;gap:30px;">
+<div class="cards">
+  <div class="card">
 
-<div style="width:280px;background:#fafafa;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);padding:20px;text-align:center;">
+<img src="https://via.placeholder.com/250x250?text=Ladies+Bag" alt="Ladies Bag">
 
-<img src="https://via.placeholder.com/250x250?text=Bag+Photo"
-style="width:100%;border-radius:10px;">
+<h3>Ladies Bag</h3>
 
-<h3 style="margin-top:15px;">Ladies Bag</h3>
-
-<p>Premium Quality</p>
+<p>Premium Quality Ladies Bag</p>
 
 <p><strong>Price: Coming Soon</strong></p>
 
-<a href="https://wa.me/8801627348384" target="_blank"
-style="display:inline-block;background:#25D366;color:white;padding:12px 25px;border-radius:30px;text-decoration:none;margin-top:10px;">
+<a class="buy" href="https://wa.me/8801627348384" target="_blank">
 Buy Now
 </a>
 
 </div>
 
-<div style="width:280px;background:#fafafa;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);padding:20px;text-align:center;">
+<div class="card">
 
-<img src="https://via.placeholder.com/250x250?text=Bag+Photo"
-style="width:100%;border-radius:10px;">
+<img src="https://via.placeholder.com/250x250?text=Travel+Bag" alt="Travel Bag">
 
-<h3 style="margin-top:15px;">Travel Bag</h3>
+<h3>Travel Bag</h3>
 
-<p>Premium Quality</p>
+<p>Premium Quality Travel Bag</p>
 
 <p><strong>Price: Coming Soon</strong></p>
 
-<a href="https://wa.me/8801627348384" target="_blank"
-style="display:inline-block;background:#25D366;color:white;padding:12px 25px;border-radius:30px;text-decoration:none;margin-top:10px;">
+<a class="buy" href="https://wa.me/8801627348384" target="_blank">
 Buy Now
 </a>
 
 </div>
 
-<div style="width:280px;background:#fafafa;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);padding:20px;text-align:center;">
+<div class="card">
 
-<img src="https://via.placeholder.com/250x250?text=Bag+Photo"
-style="width:100%;border-radius:10px;">
+<img src="https://via.placeholder.com/250x250?text=Backpack" alt="Backpack">
 
-<h3 style="margin-top:15px;">Backpack</h3>
+<h3>Backpack</h3>
 
-<p>Premium Quality</p>
+<p>Premium Quality Backpack</p>
 
 <p><strong>Price: Coming Soon</strong></p>
 
-<a href="https://wa.me/8801627348384" target="_blank"
-style="display:inline-block;background:#25D366;color:white;padding:12px 25px;border-radius:30px;text-decoration:none;margin-top:10px;">
+<a class="buy" href="https://wa.me/8801627348384" target="_blank">
 Buy Now
 </a>
 
@@ -228,131 +270,86 @@ Buy Now
 
 </section>
 
-<!-- WHY CHOOSE US -->
-
-<section style="padding:70px 20px;background:#f8f5f2;">
+<section id="about" style="padding:70px 20px;background:#f8f5f2;">
 
 <h2 style="text-align:center;color:#5b3b1e;font-size:36px;">
-Why Choose B & B Bag World?
+About Us
 </h2>
 
-<div style="max-width:900px;margin:40px auto;font-size:18px;line-height:2;">
+<div style="max-width:900px;margin:auto;text-align:center;font-size:18px;line-height:2;margin-top:30px;">
 
-✅ Premium Quality Bags<br>
-
-✅ Affordable Prices<br>
-
-✅ Stylish & Trendy Collection<br>
-
-✅ Cash on Delivery Available<br>
-
-✅ Fast Delivery All Over Bangladesh<br>
-
-✅ Trusted Customer Service
-
-</div>
-
-</section>
-<!-- ABOUT SECTION -->
-
-<section id="about" style="padding:70px 20px;background:white;">
-
-<h2 style="text-align:center;font-size:38px;color:#5b3b1e;">
-About B & B Bag World
-</h2>
-
-<div style="max-width:900px;margin:auto;text-align:center;font-size:18px;line-height:1.9;margin-top:30px;">
-
-Welcome to <b>B & B Bag World</b>.
-
-We provide premium quality ladies bags, backpacks, travel bags and fashionable collections at affordable prices.
-
-Our mission is to deliver stylish bags with trusted service and fast delivery across Bangladesh.
-
-Your satisfaction is our first priority.
+<p>
+Welcome to <strong>B & B Bag World</strong>.
+We provide stylish ladies bags, backpacks and travel bags with premium quality at affordable prices.
+Our goal is to offer trusted service and fast delivery all over Bangladesh.
+</p>
 
 </div>
 
 </section>
 
-<!-- DELIVERY -->
-
-<section style="background:#f7f2ec;padding:60px 20px;">
+<section style="padding:60px 20px;background:white;">
 
 <h2 style="text-align:center;color:#5b3b1e;">
 🚚 Delivery Charge
 </h2>
 
-<div style="max-width:700px;margin:auto;text-align:center;font-size:20px;line-height:2;">
+<div style="text-align:center;font-size:20px;line-height:2;margin-top:20px;">
 
-📍 Inside Dhaka — <b>৳80</b><br>
+Inside Dhaka — <strong>৳80</strong><br>
 
-📍 Outside Dhaka — <b>৳130</b><br>
+Outside Dhaka — <strong>৳130</strong><br>
 
 <small>(Delivery charge may vary depending on the product.)</small>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
-
-<section id="contact" style="padding:70px 20px;background:white;">
+<section id="contact" style="padding:70px 20px;background:#f8f5f2;">
 
 <h2 style="text-align:center;color:#5b3b1e;font-size:36px;">
 Contact Us
 </h2>
 
-<div style="max-width:800px;margin:auto;text-align:center;font-size:18px;line-height:2;">
+<div style="max-width:800px;margin:auto;text-align:center;font-size:18px;line-height:2.2;">
 
-📱 WhatsApp:
+📱 <strong>WhatsApp:</strong><br>
 <a href="https://wa.me/8801627348384" target="_blank">
 01627348384
 </a>
 
 <br><br>
 
-📧 Email:
-<br>
-
+📧 <strong>Email:</strong><br>
 <a href="mailto:nazmulhasanh09@gmail.com">
 nazmulhasanh09@gmail.com
 </a>
 
 <br><br>
 
-📘 Facebook
-<br>
-
+📘 <strong>Facebook:</strong><br>
 <a href="https://www.facebook.com/share/1FWagFNEfb/" target="_blank">
-Visit Our Facebook Page
+B & B Bag World
 </a>
 
 <br><br>
 
-📍 Shop Address
-
-<br><br>
+📍 <strong>Shop Address:</strong><br>
 
 Rayhan Mansion (Underground)<br>
-
 70/102 Biren Bose Street<br>
-
 Chawk Moghaltuli<br>
-
 Dhaka-1211, Bangladesh
 
 </div>
 
 </section>
 
-<!-- FOOTER -->
-
 <footer style="background:#222;color:white;text-align:center;padding:35px;">
 
 <h2>B & B Bag World</h2>
 
-<p>Premium Quality Bags | Trusted Service | Fast Delivery</p>
+<p>Premium Quality Bags • Trusted Service • Fast Delivery</p>
 
 <p>© 2026 B & B Bag World. All Rights Reserved.</p>
 
