@@ -3,11 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>B & B Bag World</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -17,43 +13,42 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f7f5f2;
+background:#f5f2ee;
 color:#333;
 }
 
 .topbar{
-background:#3d2b1f;
+background:#5b3b1e;
 color:#fff;
-text-align:center;
 padding:12px;
+text-align:center;
 font-size:15px;
-font-weight:500;
 }
 
 header{
-background:white;
-padding:30px 20px;
+background:#fff;
+padding:30px;
 text-align:center;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
+box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
 header img{
 width:120px;
 height:120px;
 border-radius:50%;
+border:4px solid #d4af37;
 object-fit:cover;
-border:5px solid #d4af37;
 }
 
 header h1{
 margin-top:15px;
-font-size:40px;
-color:#5a3825;
+font-size:42px;
+color:#5b3b1e;
 }
 
 header p{
@@ -62,20 +57,19 @@ color:#666;
 }
 
 nav{
-position:sticky;
-top:0;
-z-index:999;
 background:#222;
 padding:16px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
-margin:0 20px;
+margin:0 18px;
 font-weight:600;
-transition:.3s;
 }
 
 nav a:hover{
@@ -88,12 +82,12 @@ background:
 
 linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 
-url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80");
+url("https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1800&q=80");
 
 background-size:cover;
 background-position:center;
 
-padding:120px 20px;
+padding:130px 20px;
 
 text-align:center;
 
@@ -105,17 +99,17 @@ color:white;
 
 font-size:48px;
 
-margin-bottom:15px;
+margin-bottom:20px;
 
 }
 
 .hero p{
 
-max-width:700px;
+max-width:760px;
 
 margin:auto;
 
-font-size:18px;
+font-size:19px;
 
 line-height:1.8;
 
@@ -125,11 +119,11 @@ line-height:1.8;
 
 display:inline-block;
 
-margin:15px 10px;
+margin:18px 10px;
 
 padding:15px 35px;
 
-border-radius:40px;
+border-radius:35px;
 
 text-decoration:none;
 
@@ -140,84 +134,61 @@ transition:.3s;
 }
 
 .whatsapp{
-
 background:#25D366;
-
-color:white;
-
+color:#fff;
 }
 
 .facebook{
-
 background:#1877F2;
-
-color:white;
-
+color:#fff;
 }
 
 .btn:hover{
-
-transform:translateY(-5px);
-
-}
-
-section{
-
-padding:80px 20px;
-
+transform:translateY(-4px);
 }
 
 .container{
-
+width:90%;
 max-width:1200px;
-
 margin:auto;
+}
 
+section{
+padding:80px 0;
 }
 
 h2{
-
 text-align:center;
-
 font-size:38px;
-
-color:#5a3825;
-
-margin-bottom:45px;
-
+color:#5b3b1e;
+margin-bottom:40px;
+}
+.products{
+background:linear-gradient(135deg,#fdf8f4,#efe5d8);
 }
 
 .cards{
-
-display:flex;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
-
 }
+  .card{
 
-.card{
+background:#fff;
 
-width:300px;
-
-background:white;
-
-border-radius:20px;
+border-radius:18px;
 
 overflow:hidden;
 
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+box-shadow:0 10px 25px rgba(0,0,0,.10);
 
-transition:.4s;
+transition:.3s;
 
 }
 
 .card:hover{
 
-transform:translateY(-10px);
+transform:translateY(-8px);
 
 }
 
@@ -241,9 +212,9 @@ text-align:center;
 
 .card h3{
 
-margin-bottom:10px;
+color:#5b3b1e;
 
-color:#5a3825;
+margin-bottom:10px;
 
 }
 
@@ -253,17 +224,33 @@ display:inline-block;
 
 margin-top:15px;
 
-padding:12px 25px;
+padding:12px 28px;
 
 background:#25D366;
 
-color:white;
-
-border-radius:30px;
+color:#fff;
 
 text-decoration:none;
 
-font-weight:bold;
+border-radius:30px;
+
+font-weight:600;
+
+}
+
+.factory{
+
+background:linear-gradient(135deg,#5b3b1e,#8a5a34);
+
+color:white;
+
+text-align:center;
+
+}
+
+.factory h2{
+
+color:white;
 
 }
 
@@ -272,24 +259,35 @@ font-weight:bold;
 background:#fffaf5;
 
 }
-.products{
-background:linear-gradient(135deg,#f8f5f2,#efe5d8);
-}
 
-.factory{
-background:linear-gradient(135deg,#5a3825,#8b5e3c);
-color:white;
-text-align:center;
+.contact{
+
+background:white;
+
 }
 
 footer{
+
 background:#222;
+
 color:white;
+
 text-align:center;
+
 padding:40px 20px;
+
+}
+
+footer h2{
+
+color:#d4af37;
+
+margin-bottom:10px;
+
 }
 
 </style>
+
 </head>
 
 <body>
@@ -300,7 +298,7 @@ padding:40px 20px;
 
 <header>
 
-<img src="logo.png" alt="B & B Bag World Logo">
+<img src="logo.png" alt="Logo">
 
 <h1>B & B Bag World</h1>
 
@@ -311,9 +309,13 @@ padding:40px 20px;
 <nav>
 
 <a href="#">Home</a>
+
 <a href="#products">Products</a>
+
 <a href="#factory">Factory</a>
+
 <a href="#about">About</a>
+
 <a href="#contact">Contact</a>
 
 </nav>
@@ -324,11 +326,9 @@ padding:40px 20px;
 
 <p>
 
-We manufacture premium quality School Bags, Office Bags, Travel Bags and Side Bags with modern designs and excellent finishing.
+We manufacture premium quality School Bags, Office Bags, Travel Bags and Side Bags with modern designs and durable materials.
 
 </p>
-
-<br>
 
 <a class="btn whatsapp" href="https://wa.me/8801627348384" target="_blank">
 
@@ -351,106 +351,69 @@ Facebook Page
 <h2>Our Collection</h2>
 
 <div class="cards">
-
-<div class="card">
-
-<img src="schoolbag.jpg" alt="School Bag">
-
+  <div class="card">
+<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="School Bag">
 <div class="card-content">
-
 <h3>School Bag</h3>
-
-<p>Strong and stylish school bags.</p>
-
-<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
-
+<p>Strong, durable and stylish school bags.</p>
+<a class="buy" href="https://wa.me/8801627348384" target="_blank">Order Now</a>
 </div>
-
 </div>
 
 <div class="card">
-
-<img src="officebag.jpg" alt="Office Bag">
-
+<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80" alt="Office Bag">
 <div class="card-content">
-
 <h3>Office Bag</h3>
-
-<p>Professional office bags.</p>
-
-<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
-
+<p>Professional office bags for everyday work.</p>
+<a class="buy" href="https://wa.me/8801627348384" target="_blank">Order Now</a>
 </div>
-
 </div>
 
 <div class="card">
-
-<img src="travelbag.jpg" alt="Travel Bag">
-
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Travel Bag">
 <div class="card-content">
-
 <h3>Travel Bag</h3>
-
-<p>Premium quality travel bags.</p>
-
-<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
-
+<p>Premium travel bags for every journey.</p>
+<a class="buy" href="https://wa.me/8801627348384" target="_blank">Order Now</a>
 </div>
-
 </div>
 
 <div class="card">
-
-<img src="sidebag.jpg" alt="Side Bag">
-
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Side Bag">
 <div class="card-content">
-
 <h3>Side Bag</h3>
-
-<p>Modern side bags for everyday use.</p>
-
-<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
-
+<p>Modern side bags with elegant designs.</p>
+<a class="buy" href="https://wa.me/8801627348384" target="_blank">Order Now</a>
+</div>
 </div>
 
 </div>
-
 </div>
-
-</div>
-
 </section>
 
 <section class="factory" id="factory">
-
 <div class="container">
 
 <h2>Our Factory</h2>
 
-<p>
-
+<p style="font-size:20px;line-height:2;">
 <strong>Factory Address</strong><br><br>
-
 17/2, Urdu Road (7th Floor)<br>
-
 Chawk Bazar, Dhaka-1211, Bangladesh
-
 </p>
 
-<br><br>
+<br>
 
-<h3>Custom Bag Manufacturing</h3>
+<h3>Customized Bag Manufacturing</h3>
 
-<p>
-
-We manufacture all kinds of customized bags according to your design, logo, color, size and branding requirements.
-
+<p style="max-width:850px;margin:auto;line-height:2;font-size:18px;">
+We manufacture all kinds of customized bags according to your requirements.
+You can customize the design, logo, size, color, material and branding for your business, company, school or organization.
 </p>
 
 </div>
-
 </section>
+
 <section class="about" id="about">
 
 <div class="container">
@@ -458,28 +421,19 @@ We manufacture all kinds of customized bags according to your design, logo, colo
 <h2>About Us</h2>
 
 <p style="max-width:900px;margin:auto;text-align:center;font-size:18px;line-height:2;color:#555;">
-
-Welcome to <strong>B & B Bag World</strong>.
-
-We are a trusted bag manufacturer in Bangladesh, producing premium quality School Bags, Office Bags, Travel Bags and Side Bags.
-
-We also manufacture customized bags according to our customers' requirements, including their preferred logo, color, size, material and branding.
-
-Our goal is to provide excellent quality, competitive prices and reliable service throughout Bangladesh.
-
+Welcome to <strong>B & B Bag World</strong>. We are a trusted bag manufacturer in Bangladesh, producing premium quality School Bags, Office Bags, Travel Bags and Side Bags. We also manufacture customized bags for businesses, schools and organizations with high-quality materials and modern finishing.
 </p>
 
 </div>
 
 </section>
-
-<section id="contact" style="background:#ffffff;">
+<section class="contact" id="contact">
 
 <div class="container">
 
 <h2>Contact Us</h2>
 
-<div style="text-align:center;font-size:18px;line-height:2.3;">
+<div style="text-align:center;font-size:18px;line-height:2.2;">
 
 📱 <strong>WhatsApp</strong><br>
 
@@ -508,7 +462,6 @@ nazmulhasanh09@gmail.com
 🏭 <strong>Factory Address</strong><br>
 
 17/2, Urdu Road (7th Floor)<br>
-
 Chawk Bazar, Dhaka-1211, Bangladesh
 
 </div>
@@ -519,17 +472,17 @@ Chawk Bazar, Dhaka-1211, Bangladesh
 
 <footer>
 
-<h2 style="color:#d4af37;">B & B Bag World</h2>
+<h2>B & B Bag World</h2>
 
-<p style="margin-top:10px;">
-Premium Quality School, Office, Travel & Side Bags
+<p>
+Premium Quality School Bags • Office Bags • Travel Bags • Side Bags
 </p>
 
 <p style="margin-top:10px;">
 Manufacturer • Wholesaler • Retailer • Custom Bag Production
 </p>
 
-<p style="margin-top:20px;font-size:14px;color:#bbb;">
+<p style="margin-top:15px;font-size:14px;color:#ccc;">
 © 2026 B & B Bag World. All Rights Reserved.
 </p>
 
