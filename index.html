@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>B & B Bag World</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -22,13 +22,13 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f8f6f3;
+background:#f7f5f2;
 color:#333;
 }
 
 .topbar{
 background:#5b3b1e;
-color:white;
+color:#fff;
 text-align:center;
 padding:12px;
 font-size:15px;
@@ -36,9 +36,9 @@ font-weight:500;
 }
 
 header{
-background:white;
-text-align:center;
+background:#fff;
 padding:35px 20px;
+text-align:center;
 box-shadow:0 3px 15px rgba(0,0,0,.08);
 }
 
@@ -46,8 +46,8 @@ header img{
 width:120px;
 height:120px;
 border-radius:50%;
-object-fit:cover;
 border:4px solid #d4af37;
+object-fit:cover;
 }
 
 header h1{
@@ -57,17 +57,17 @@ color:#5b3b1e;
 }
 
 header p{
-margin-top:10px;
+margin-top:8px;
 font-size:18px;
 color:#666;
 }
 
 nav{
+position:sticky;
+top:0;
 background:#222;
 padding:16px;
 text-align:center;
-position:sticky;
-top:0;
 z-index:999;
 }
 
@@ -89,7 +89,7 @@ background:
 
 linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
 
-url("https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=1800&q=80");
+url("https://images.unsplash.com/photo-1512436991641-6745cdb1723?auto=format&fit=crop&w=1800&q=80");
 
 background-size:cover;
 background-position:center;
@@ -126,15 +126,15 @@ line-height:1.8;
 
 display:inline-block;
 
-padding:15px 35px;
-
 margin:20px 10px;
+
+padding:15px 35px;
 
 border-radius:40px;
 
-font-weight:bold;
-
 text-decoration:none;
+
+font-weight:bold;
 
 transition:.3s;
 
@@ -184,42 +184,103 @@ text-align:center;
 
 font-size:38px;
 
-color:#5b3b1e;
-
 margin-bottom:40px;
+
+color:#5b3b1e;
 
 }
 
 .products{
 
-background:linear-gradient(135deg,#fdfbf9,#efe6da);
+background:#f8f6f3;
+
+min-height:350px;
 
 }
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-
-gap:30px;
-
-}
-
-.card{
-
-background:white;
-
-border-radius:20px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-padding:25px;
-
+  .factory{
+background:linear-gradient(135deg,#5b3b1e,#8a5a35);
+color:white;
 text-align:center;
-
 }
-  <!-- PRODUCTS SECTION (EMPTY) -->
+
+.factory h2{
+color:white;
+}
+
+.about{
+background:#fffaf5;
+}
+
+.contact{
+background:white;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+footer h2{
+color:#d4af37;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+🚚 Inside Dhaka Delivery ৳80 | Outside Dhaka ৳130 (Depends on Product)
+</div>
+
+<header>
+
+<img src="logo.png" alt="B & B Bag World Logo">
+
+<h1>B & B Bag World</h1>
+
+<p>Premium Quality School, Office, Travel & Side Bags</p>
+
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#factory">Factory</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>Premium Bag Manufacturer In Bangladesh</h2>
+
+<p>
+
+We manufacture premium quality School Bags, Office Bags,
+Travel Bags and Side Bags with modern design, strong materials
+and excellent craftsmanship.
+
+</p>
+
+<a class="btn whatsapp" href="https://wa.me/8801627348384" target="_blank">
+
+WhatsApp Order
+
+</a>
+
+<a class="btn facebook" href="https://www.facebook.com/share/1FWagFNEfb/" target="_blank">
+
+Facebook Page
+
+</a>
+
+</section>
 
 <section class="products" id="products">
 
@@ -227,14 +288,10 @@ text-align:center;
 
 <h2>Our Collection</h2>
 
-<div class="cards">
-
 <!--
-Leave this section empty.
-Tomorrow your own bag photos will be added here.
+KEEP THIS SECTION EMPTY.
+YOU WILL ADD YOUR OWN PRODUCT PHOTOS HERE LATER.
 -->
-
-</div>
 
 </div>
 
@@ -250,7 +307,7 @@ Tomorrow your own bag photos will be added here.
 <strong>Factory Address</strong><br><br>
 
 17/2, Urdu Road (7th Floor)<br>
-Chawk Bazar,<br>
+Chawk Bazar<br>
 Dhaka-1211, Bangladesh
 
 </p>
@@ -262,10 +319,10 @@ Dhaka-1211, Bangladesh
 <p style="max-width:900px;margin:auto;font-size:18px;line-height:2;">
 
 We manufacture all kinds of customized bags according to your requirements.
-You can customize your bags with your own logo, company name, school name,
-brand identity, preferred color, size, material and design.
-We provide premium-quality custom bag manufacturing for businesses,
-schools, organizations, wholesalers and retailers across Bangladesh.
+
+You can customize your bags with your own company logo, school logo, brand name, preferred color, size, material and unique design.
+
+We provide premium quality custom bag manufacturing services for businesses, schools, wholesalers and retailers across Bangladesh.
 
 </p>
 
@@ -283,11 +340,9 @@ schools, organizations, wholesalers and retailers across Bangladesh.
 
 Welcome to <strong>B & B Bag World</strong>.
 
-We are a trusted bag manufacturer in Bangladesh specializing in School Bags,
-Office Bags, Travel Bags and Side Bags.
+We are a trusted bag manufacturer in Bangladesh producing premium quality School Bags, Office Bags, Travel Bags and Side Bags.
 
-Our goal is to provide premium quality products, competitive prices,
-excellent customer service and fast delivery all over Bangladesh.
+Our mission is to provide excellent quality products, competitive prices and reliable customer service throughout Bangladesh.
 
 </p>
 
@@ -301,12 +356,14 @@ excellent customer service and fast delivery all over Bangladesh.
 
 <h2>Contact Us</h2>
 
-<div style="text-align:center;font-size:18px;line-height:2.3;">
+<div style="text-align:center;font-size:18px;line-height:2.2;">
 
 📱 <strong>WhatsApp</strong><br>
 
 <a href="https://wa.me/8801627348384" target="_blank">
+
 +880 1627-348384
+
 </a>
 
 <br><br>
@@ -314,7 +371,9 @@ excellent customer service and fast delivery all over Bangladesh.
 📘 <strong>Facebook</strong><br>
 
 <a href="https://www.facebook.com/share/1FWagFNEfb/" target="_blank">
+
 B & B Bag World
+
 </a>
 
 <br><br>
@@ -322,7 +381,9 @@ B & B Bag World
 📧 <strong>Email</strong><br>
 
 <a href="mailto:nazmulhasanh09@gmail.com">
+
 nazmulhasanh09@gmail.com
+
 </a>
 
 <br><br>
@@ -330,7 +391,9 @@ nazmulhasanh09@gmail.com
 🏭 <strong>Factory Address</strong><br>
 
 17/2, Urdu Road (7th Floor)<br>
-Chawk Bazar,<br>
+
+Chawk Bazar<br>
+
 Dhaka-1211, Bangladesh
 
 </div>
