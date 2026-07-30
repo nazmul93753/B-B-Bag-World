@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,32 +23,32 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f7f5f2;
+background:#f8f7f4;
 color:#333;
 }
 
 .topbar{
-background:#5b3b1e;
-color:#fff;
-text-align:center;
+background:#4b2e1f;
+color:white;
 padding:12px;
+text-align:center;
 font-size:15px;
 font-weight:500;
 }
 
 header{
 background:#fff;
-padding:35px 20px;
+padding:30px 20px;
 text-align:center;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 header img{
 width:120px;
 height:120px;
 border-radius:50%;
-border:4px solid #d4af37;
 object-fit:cover;
+border:4px solid #d4af37;
 }
 
 header h1{
@@ -57,18 +58,18 @@ color:#5b3b1e;
 }
 
 header p{
-margin-top:8px;
-font-size:18px;
+margin-top:10px;
 color:#666;
+font-size:18px;
 }
 
 nav{
 position:sticky;
 top:0;
+z-index:999;
 background:#222;
 padding:16px;
 text-align:center;
-z-index:999;
 }
 
 nav a{
@@ -87,9 +88,9 @@ color:#d4af37;
 
 background:
 
-linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 
-url("https://images.unsplash.com/photo-1512436991641-6745cdb1723?auto=format&fit=crop&w=1800&q=80");
+url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1800&q=80");
 
 background-size:cover;
 background-position:center;
@@ -104,7 +105,7 @@ color:white;
 
 .hero h2{
 
-font-size:50px;
+font-size:52px;
 
 margin-bottom:20px;
 
@@ -118,7 +119,7 @@ margin:auto;
 
 font-size:19px;
 
-line-height:1.8;
+line-height:1.9;
 
 }
 
@@ -126,9 +127,9 @@ line-height:1.8;
 
 display:inline-block;
 
-margin:20px 10px;
-
 padding:15px 35px;
+
+margin:20px 10px;
 
 border-radius:40px;
 
@@ -141,61 +142,83 @@ transition:.3s;
 }
 
 .whatsapp{
-
 background:#25D366;
-
 color:white;
-
 }
 
 .facebook{
-
 background:#1877F2;
-
 color:white;
-
 }
 
 .btn:hover{
-
 transform:translateY(-5px);
-
-}
-
-.container{
-
-width:90%;
-
-max-width:1200px;
-
-margin:auto;
-
 }
 
 section{
+padding:80px 20px;
+}
 
-padding:80px 0;
-
+.container{
+max-width:1200px;
+margin:auto;
 }
 
 h2{
-
 text-align:center;
-
 font-size:38px;
-
 margin-bottom:40px;
-
 color:#5b3b1e;
-
 }
 
 .products{
+background:#f7f3ee;
+}
 
-background:#f8f6f3;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
 
-min-height:350px;
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
 
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#d35400;
+margin:15px 0;
+}
+
+.buy{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
 }
   .factory{
 background:linear-gradient(135deg,#5b3b1e,#8a5a35);
@@ -212,7 +235,7 @@ background:#fffaf5;
 }
 
 .contact{
-background:white;
+background:#ffffff;
 }
 
 footer{
@@ -233,12 +256,12 @@ color:#d4af37;
 <body>
 
 <div class="topbar">
-🚚 Inside Dhaka Delivery ৳80 | Outside Dhaka ৳130 (Depends on Product)
+🚚 Inside Dhaka Delivery ৳80 | Outside Dhaka ৳130
 </div>
 
 <header>
 
-<img src="logo.png" alt="B & B Bag World Logo">
+<img src="logo.png" alt="B & B Bag World">
 
 <h1>B & B Bag World</h1>
 
@@ -263,8 +286,8 @@ color:#d4af37;
 <p>
 
 We manufacture premium quality School Bags, Office Bags,
-Travel Bags and Side Bags with modern design, strong materials
-and excellent craftsmanship.
+Travel Bags, Cross Bags and Baby Bags with modern design,
+excellent finishing and affordable prices.
 
 </p>
 
@@ -288,15 +311,50 @@ Facebook Page
 
 <h2>Our Collection</h2>
 
-<!--
-KEEP THIS SECTION EMPTY.
-YOU WILL ADD YOUR OWN PRODUCT PHOTOS HERE LATER.
--->
+<div class="cards">
+
+<div class="card">
+<img src="cross-bag.jpg" alt="Cross Bag">
+<div class="card-content">
+<h3>Imported China Cross Bag</h3>
+<p class="price">৳980</p>
+<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="school-bag.jpg" alt="School Bag">
+<div class="card-content">
+<h3>China Imported School Bag</h3>
+<p class="price">৳1650</p>
+<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="baby-school-bag.jpg" alt="Baby School Bag">
+<div class="card-content">
+<h3>Imported China Baby School Bag</h3>
+<p class="price">৳800</p>
+<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="baby-carry-bag.jpg" alt="Baby Carry Bag">
+<div class="card-content">
+<h3>Premium Baby Carry Bag</h3>
+<p class="price">৳1000</p>
+<a class="buy" href="https://wa.me/8801627348384">Order Now</a>
+</div>
+</div>
+
+</div>
 
 </div>
 
 </section>
-  <section class="factory" id="factory">
+<section class="factory" id="factory">
 
 <div class="container">
 
@@ -318,11 +376,13 @@ Dhaka-1211, Bangladesh
 
 <p style="max-width:900px;margin:auto;font-size:18px;line-height:2;">
 
-We manufacture all kinds of customized bags according to your requirements.
+We manufacture premium quality School Bags, Office Bags, Travel Bags,
+Cross Bags and Baby Bags. We also produce customized bags according
+to your company logo, school logo, brand name, preferred color,
+size and design.
 
-You can customize your bags with your own company logo, school logo, brand name, preferred color, size, material and unique design.
-
-We provide premium quality custom bag manufacturing services for businesses, schools, wholesalers and retailers across Bangladesh.
+We are committed to providing premium quality products,
+competitive prices and reliable customer service across Bangladesh.
 
 </p>
 
@@ -340,9 +400,13 @@ We provide premium quality custom bag manufacturing services for businesses, sch
 
 Welcome to <strong>B & B Bag World</strong>.
 
-We are a trusted bag manufacturer in Bangladesh producing premium quality School Bags, Office Bags, Travel Bags and Side Bags.
+We are a trusted bag manufacturer and supplier in Bangladesh.
 
-Our mission is to provide excellent quality products, competitive prices and reliable customer service throughout Bangladesh.
+Our collection includes School Bags, Office Bags, Travel Bags,
+Cross Bags and Baby Bags.
+
+We believe in premium quality, affordable prices,
+modern designs and excellent customer satisfaction.
 
 </p>
 
@@ -391,9 +455,7 @@ nazmulhasanh09@gmail.com
 🏭 <strong>Factory Address</strong><br>
 
 17/2, Urdu Road (7th Floor)<br>
-
 Chawk Bazar<br>
-
 Dhaka-1211, Bangladesh
 
 </div>
@@ -408,7 +470,7 @@ Dhaka-1211, Bangladesh
 
 <p style="margin-top:10px;">
 
-Premium Quality School Bags • Office Bags • Travel Bags • Side Bags
+Premium Quality School Bags • Office Bags • Travel Bags • Cross Bags • Baby Bags
 
 </p>
 
@@ -427,5 +489,4 @@ Manufacturer • Wholesaler • Retailer • Custom Bag Production
 </footer>
 
 </body>
-
 </html>
